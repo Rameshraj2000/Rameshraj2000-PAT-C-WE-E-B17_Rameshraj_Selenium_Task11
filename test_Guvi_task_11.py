@@ -81,8 +81,8 @@ def test_positive_login(): #Test to validate successful login using valid Userna
     username = wait.until(EC.visibility_of_element_located((By.ID, "email")))
     password = wait.until(EC.visibility_of_element_located((By.ID, "password")))
 
-    username.send_keys("draj56403@gmail.com")
-    password.send_keys("Ramesh@1#")
+    username.send_keys()
+    password.send_keys()
 
     submit_btn = wait.until(
         EC.element_to_be_clickable((By.ID, "login-btn"))
